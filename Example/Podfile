@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'UXMTokenField_Example', :exclusive => true do
+  pod 'UXMTokenField', :path => '../'
+end
+
+target 'UXMTokenField_Tests', :exclusive => true do
+  pod 'UXMTokenField', :path => '../'
+
+  pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
+  pod 'FBSnapshotTestCase'
+  pod 'Nimble-Snapshots'
+end
