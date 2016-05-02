@@ -1,6 +1,6 @@
-# UXMTokenField
+![UXM Token Field](https://uxmstudio.com/public/images/uxmtokenfield.png)
 
-[![CI Status](http://img.shields.io/travis/Chris Anderson/UXMTokenField.svg?style=flat)](https://travis-ci.org/Chris Anderson/UXMTokenField)
+[![CI Status](http://img.shields.io/travis/uxmstudio/UXMTokenField.svg?style=flat)](https://travis-ci.org/uxmstudio/UXMTokenField)
 [![Version](https://img.shields.io/cocoapods/v/UXMTokenField.svg?style=flat)](http://cocoapods.org/pods/UXMTokenField)
 [![License](https://img.shields.io/cocoapods/l/UXMTokenField.svg?style=flat)](http://cocoapods.org/pods/UXMTokenField)
 [![Platform](https://img.shields.io/cocoapods/p/UXMTokenField.svg?style=flat)](http://cocoapods.org/pods/UXMTokenField)

@@ -1,0 +1,6 @@
+framework module UXMTokenField {
+  umbrella header "UXMTokenField-umbrella.h"
+
+  export *
+  module * { export * }
+}
