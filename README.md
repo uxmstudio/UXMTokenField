@@ -8,8 +8,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 UXMTokenField is available through [CocoaPods](http://cocoapods.org). To install
