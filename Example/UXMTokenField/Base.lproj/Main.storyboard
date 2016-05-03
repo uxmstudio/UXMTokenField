@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -11,14 +10,14 @@
             <objects>
                 <tableViewController id="05f-gx-Rmd" customClass="TableViewController" customModule="UXMTokenField_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="18" sectionFooterHeight="18" id="Nrm-cA-l92">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection id="vQ9-oH-jip">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="rTd-8t-OPK">
-                                        <rect key="frame" x="0.0" y="99" width="600" height="70"/>
+                                        <rect key="frame" x="0.0" y="35" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rTd-8t-OPK" id="bf6-1A-CbI">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
@@ -62,22 +61,22 @@
                         <viewControllerLayoutGuide type="bottom" id="GMx-zH-j8k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wXi-3l-Ou0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZS-cy-9oK" customClass="UXMTokenField" customModule="UXMTokenField">
-                                <rect key="frame" x="20" y="84" width="560" height="60"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZS-cy-9oK" customClass="UXMTokenField" customModule="UXMTokenField">
+                                <rect key="frame" x="0.0" y="64" width="600" height="60"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="hve-o7-mG3"/>
+                                    <constraint firstAttribute="height" constant="60" id="hve-o7-mG3"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lZS-cy-9oK" firstAttribute="leading" secondItem="wXi-3l-Ou0" secondAttribute="leadingMargin" id="5vP-4c-tPf"/>
-                            <constraint firstItem="lZS-cy-9oK" firstAttribute="top" secondItem="q61-z6-ETy" secondAttribute="bottom" constant="20" id="Fby-BE-We4"/>
-                            <constraint firstItem="lZS-cy-9oK" firstAttribute="trailing" secondItem="wXi-3l-Ou0" secondAttribute="trailingMargin" id="Kzl-XH-bAE"/>
+                            <constraint firstItem="lZS-cy-9oK" firstAttribute="top" secondItem="q61-z6-ETy" secondAttribute="bottom" id="Fby-BE-We4"/>
+                            <constraint firstAttribute="trailing" secondItem="lZS-cy-9oK" secondAttribute="trailing" id="PTX-A5-li4"/>
+                            <constraint firstItem="lZS-cy-9oK" firstAttribute="leading" secondItem="wXi-3l-Ou0" secondAttribute="leading" id="dW8-pY-k1T"/>
                         </constraints>
                     </view>
                     <connections>
@@ -93,7 +92,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LP8-Uq-32E" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="huZ-89-qJd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="huZ-89-qJd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -106,24 +105,19 @@
             </objects>
             <point key="canvasLocation" x="-328" y="518"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="P1w-K7-WOg">
             <objects>
-                <tableViewController id="I48-4P-kqC" sceneMemberID="viewController">
+                <tableViewController id="I48-4P-kqC" customClass="HomeViewController" customModule="UXMTokenField_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="6Ck-Iq-jsF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="fZU-Ja-C5Y">
-                            <rect key="frame" x="0.0" y="64" width="600" height="80"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </imageView>
                         <sections>
                             <tableViewSection headerTitle="Examples" id="1fU-LQ-atZ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="mXa-bd-Bst">
-                                        <rect key="frame" x="0.0" y="193.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mXa-bd-Bst" id="inv-6r-MKb">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -142,7 +136,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="g0U-LD-fuj">
-                                        <rect key="frame" x="0.0" y="237.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="93.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g0U-LD-fuj" id="xZD-n5-uGm">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -175,7 +169,4 @@
             <point key="canvasLocation" x="491" y="518"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="logo" width="2000" height="500"/>
-    </resources>
 </document>

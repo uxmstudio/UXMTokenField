@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         self.tokenField.delimiters = [",", ";", "--"]
         self.tokenField.tokenSeperator = "→"
         self.tokenField.colorScheme = UIColor.blueColor()
-        self.tokenField.horizontalInset = 13.0
         
         let toolbar = UIToolbar(frame: CGRectMake(0, 0, self.view.frame.size.width, 50))
         toolbar.barStyle = UIBarStyle.Default
