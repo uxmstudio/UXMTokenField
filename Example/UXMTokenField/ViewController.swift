@@ -13,10 +13,17 @@ class ViewController: UIViewController {
 
     @IBOutlet var tokenField:UXMTokenField!
     var names:[String] = []
+    var autocomplete:[String] = [ "John", "James", "Jimmy", "Peter", "Paul", "Susan", "Jane", "Claire" ]
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        self.setupUI()
+    }
+
+    func setupUI() {
+        
+        self.title = "View Controller"
         
         self.tokenField.delegate = self
         self.tokenField.dataSource = self
@@ -34,11 +41,6 @@ class ViewController: UIViewController {
             UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(ViewController.closeKeyboard))]
         toolbar.sizeToFit()
         self.tokenField.inputTextFieldAccessoryView = toolbar
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func clearRoute() {
@@ -76,7 +78,6 @@ extension ViewController: UXMTokenFieldDataSource {
     }
     
     func tokenField(tokenField:UXMTokenField, autocompleteValuesFor text:String) -> [AnyObject] {
-        
-        return [ "John", "James", "Peter", "Paul", "Susan", "Jane", "Claire" ]
+        return autocomplete.filter { $0.rangeOfString(text) != nil }
     }
 }

@@ -13,10 +13,16 @@ class TableViewController: UITableViewController {
 
     @IBOutlet var tokenField:UXMTokenField!
     var names:[String] = []
+    var autocomplete:[String] = [ "John", "James", "Jimmy", "Peter", "Paul", "Susan", "Jane", "Claire" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setupUI()
+    }
+    
+    func setupUI() {
+        self.title = "Table View Controller"
+        
         self.tokenField.delegate = self
         self.tokenField.dataSource = self
         self.tokenField.placeholderText = "Tap to start typing"
@@ -33,8 +39,8 @@ class TableViewController: UITableViewController {
             UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(ViewController.closeKeyboard))]
         toolbar.sizeToFit()
         self.tokenField.inputTextFieldAccessoryView = toolbar
-
     }
+    
     func clearRoute() {
         self.names.removeAll()
         self.tokenField.reloadData()
@@ -70,7 +76,6 @@ extension TableViewController: UXMTokenFieldDataSource {
     }
     
     func tokenField(tokenField:UXMTokenField, autocompleteValuesFor text:String) -> [AnyObject] {
-        
-        return [ "John", "James", "Peter", "Paul", "Susan", "Jane", "Claire" ]
+        return autocomplete.filter { $0.rangeOfString(text) != nil }
     }
 }
