@@ -1,20 +1,21 @@
 {
   "name": "UXMTokenField",
-  "version": "0.1.0",
-  "summary": "A short description of UXMTokenField.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/UXMTokenField",
+  "version": "0.0.1",
+  "summary": "An easy-to-use token field with autocompletion",
+  "description": "Incorporate a token field for emails, user look up, etc easily without having to recreate autocompletion.",
+  "homepage": "https://github.com/uxmstudio/UXMTokenField",
   "license": "MIT",
   "authors": {
-    "Chris Anderson": "hi@chrisanderson.io"
+    "Chris Anderson": "chris@uxmstudio.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/UXMTokenField.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/uxmstudio/UXMTokenField.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "requires_arc": true,
   "source_files": "UXMTokenField/Classes/**/*",
   "resource_bundles": {
     "UXMTokenField": [
